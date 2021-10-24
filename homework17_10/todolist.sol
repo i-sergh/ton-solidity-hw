@@ -23,7 +23,7 @@ contract todolist {
     }
 
     // счетчик используемых ключей
-    int8 public _numberItemKeys = 124; 
+    int8 public _numberItemKeys = 0; 
 
     // число всех элементов
     int8 public _numberItems = 0; 
