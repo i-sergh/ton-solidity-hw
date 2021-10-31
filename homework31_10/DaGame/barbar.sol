@@ -7,7 +7,7 @@ import "armyunit.sol";
 import "basestation.sol";
 contract barbar is  armyunit {
     
-  
+    int kistyl_ = 4;
   
     constructor(basestation addr) public {
         
@@ -16,11 +16,12 @@ contract barbar is  armyunit {
         require(msg.pubkey() == tvm.pubkey(), 102);
         
         tvm.accept();
-        _baseAddr = address(addr);
-        addr.newUnit(address(this), unitType);
+        unitType ="Barbar";
         myDmg = 10;
         _hp = 10;
-        unitType ="Barbar";
+        _baseAddr = address(addr);
+        addr.newUnit(address(this), unitType);
+        
         
     }
 

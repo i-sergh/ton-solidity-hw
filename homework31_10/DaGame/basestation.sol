@@ -7,7 +7,7 @@ import "gameobj_interface.sol";
 
 contract basestation is  gameobj{
     
-    int kostil = 24; 
+    int kostil = 26; 
 
     // соотношение имеющихся юнитов и их адресов
     mapping (string => address)  _myUnits;
@@ -61,11 +61,14 @@ contract basestation is  gameobj{
         tvm.accept();
         iAmDead(_enemyUnits["Base"]);
     }
-/*
-    function showMeMine() internal{
 
+    function showMeMyUnits() public returns(address, address){
+        tvm.accept();
+        address archer_ = _myUnits["Archer"];
+        address barbar_ = _myUnits["Barbar"];
+        return ( archer_ ,  barbar_);
     }
-*/
+
 
 
 }
