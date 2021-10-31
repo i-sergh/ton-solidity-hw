@@ -61,5 +61,11 @@ contract basestation is  gameobj{
         tvm.accept();
         iAmDead(_enemyUnits["Base"]);
     }
+/*
+    function showMeMine() internal{
+
+    }
+*/
+
 
 }

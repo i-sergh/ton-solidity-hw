@@ -3,9 +3,9 @@ pragma ton-solidity >= 0.35.0;
 pragma AbiHeader expire;
 
 import "gameobj_interface.sol";
-import "gameobj.sol"; 
+import "armyunit.sol"; 
 import "basestation.sol";
-contract armyunit is gameobj {
+contract archer is  armyunit {
     
   
   
@@ -19,6 +19,7 @@ contract armyunit is gameobj {
         _baseAddr = address(addr);
         addr.newUnit(address(this), unitType);
         myDmg = 4;
+        _hp = 5;
         unitType ="Archer";
         
     }

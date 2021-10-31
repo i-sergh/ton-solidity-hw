@@ -13,6 +13,8 @@ contract armyunit is gameobj {
     string public unitType ="Hi";
     // атака юнита
     uint public myDmg = 2;
+    
+    /*
     constructor(basestation addr) public {
         
         require(tvm.pubkey() != 0, 101);
@@ -24,6 +26,7 @@ contract armyunit is gameobj {
         addr.newUnit(address(this), unitType);
         
     }
+    */
     function getAttackStrength (uint _myDmg) public{
         tvm.accept();
         myDmg = _myDmg;
