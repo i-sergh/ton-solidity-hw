@@ -12,7 +12,7 @@ contract armyunit is gameobj {
     // тип юнита
     string public unitType ="Hi";
     // атака юнита
-    uint public myDmg = 2;
+    int public myDmg = 2;
     
     /*
     constructor(basestation addr) public {
@@ -27,13 +27,25 @@ contract armyunit is gameobj {
         
     }
     */
-    function getAttackStrength (uint _myDmg) public{
+    function getAttackStrength (int _myDmg) virtual public{
         tvm.accept();
         myDmg = _myDmg;
     }
-    function attackSomething (gameobj_interface addr ) public {
+    function attackSomething (gameobj_interface addr ) virtual public {
         tvm.accept();
         addr.getAttack(myDmg);
+    }
+
+
+
+     function iAmDead (address dest) public override{
+        tvm.accept();
+        // 0_0 
+        // я очень удивлен, что это так работает
+        basestation(_baseAddr).destroyUnit( unitType);
+        dest.transfer(1, false, 160);  
+        
+
     }
   
 }

@@ -1,0 +1,126 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAddr",
+			"inputs": [
+				{"name":"enemyBaseAddr","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "newUnit",
+			"inputs": [
+				{"name":"addrOfUnit","type":"address"},
+				{"name":"unitType","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "destroyUnit",
+			"inputs": [
+				{"name":"unitType","type":"string"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "showMeMyUnits",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"value0","type":"address"},
+				{"name":"value1","type":"address"}
+			]
+		},
+		{
+			"name": "iWantToDie",
+			"inputs": [
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "iAmDead",
+			"inputs": [
+				{"name":"dest","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDeffStrength",
+			"inputs": [
+				{"name":"getdeff","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttack",
+			"inputs": [
+				{"name":"getdmg","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "iAmDead2",
+			"inputs": [
+				{"name":"dest","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_hp",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_hp","type":"int256"}
+			]
+		},
+		{
+			"name": "_deff",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_deff","type":"int256"}
+			]
+		},
+		{
+			"name": "_lastAddr",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_lastAddr","type":"address"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"_hp","type":"int256"},
+		{"name":"_deff","type":"int256"},
+		{"name":"_lastAddr","type":"address"},
+		{"name":"kostil","type":"int256"},
+		{"name":"_myUnits","type":"optional(cell)"},
+		{"name":"_enemyBaseAddr","type":"address"}
+	]
+}

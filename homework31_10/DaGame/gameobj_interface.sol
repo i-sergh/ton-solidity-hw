@@ -9,5 +9,5 @@ pragma AbiHeader expire;
 
 interface gameobj_interface{
 
-    function getAttack (uint dmg) external ;
+    function getAttack (int dmg) external ;
 }

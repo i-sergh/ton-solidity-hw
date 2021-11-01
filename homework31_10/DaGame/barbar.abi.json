@@ -1,0 +1,127 @@
+{
+	"ABI version": 2,
+	"version": "2.1",
+	"header": ["time", "expire"],
+	"functions": [
+		{
+			"name": "constructor",
+			"inputs": [
+				{"name":"addr","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttackStrength",
+			"inputs": [
+				{"name":"_myDmg","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "attackSomething",
+			"inputs": [
+				{"name":"addr","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "iAmDead",
+			"inputs": [
+				{"name":"dest","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getDeffStrength",
+			"inputs": [
+				{"name":"getdeff","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "getAttack",
+			"inputs": [
+				{"name":"getdmg","type":"int256"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "iAmDead2",
+			"inputs": [
+				{"name":"dest","type":"address"}
+			],
+			"outputs": [
+			]
+		},
+		{
+			"name": "_hp",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_hp","type":"int256"}
+			]
+		},
+		{
+			"name": "_deff",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_deff","type":"int256"}
+			]
+		},
+		{
+			"name": "_lastAddr",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_lastAddr","type":"address"}
+			]
+		},
+		{
+			"name": "_baseAddr",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"_baseAddr","type":"address"}
+			]
+		},
+		{
+			"name": "unitType",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"unitType","type":"string"}
+			]
+		},
+		{
+			"name": "myDmg",
+			"inputs": [
+			],
+			"outputs": [
+				{"name":"myDmg","type":"int256"}
+			]
+		}
+	],
+	"data": [
+	],
+	"events": [
+	],
+	"fields": [
+		{"name":"_pubkey","type":"uint256"},
+		{"name":"_timestamp","type":"uint64"},
+		{"name":"_constructorFlag","type":"bool"},
+		{"name":"_hp","type":"int256"},
+		{"name":"_deff","type":"int256"},
+		{"name":"_lastAddr","type":"address"},
+		{"name":"_baseAddr","type":"address"},
+		{"name":"unitType","type":"string"},
+		{"name":"myDmg","type":"int256"},
+		{"name":"kistyl_","type":"int256"}
+	]
+}

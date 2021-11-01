@@ -10,8 +10,8 @@ import "gameobj_interface.sol";
 
 contract gameobj is gameobj_interface{
 
-    uint public _hp = 100;
-    uint public _deff = 0;
+    int public _hp = 100;
+    int public _deff = 0;
     address public _lastAddr;
     
 
@@ -28,13 +28,13 @@ contract gameobj is gameobj_interface{
     }
 
 
-    function getDeffStrength (uint getdeff)  public {
+    function getDeffStrength (int getdeff) virtual public {
         tvm.accept();
 
         _deff = getdeff;
     } 
     
-    function getAttack (uint getdmg) virtual external override  {
+    function getAttack (int getdmg) virtual external override  {
         tvm.accept();
         _hp = _hp - (getdmg - _deff);
         _lastAddr  = msg.sender;
@@ -53,11 +53,21 @@ contract gameobj is gameobj_interface{
         }
     }
 
-    function iAmDead (address dest) public{
+    function iAmDead (address dest) virtual public {
         tvm.accept();
+
         dest.transfer(1, false, 160);  
 
 
+    }
+
+    // держаться нету больше силь
+    // и полтому я накатал костыль .-.
+
+     function iAmDead2 (address dest) virtual public {
+        tvm.accept();
+
+        dest.transfer(1, false, 160);  
     }
 
 

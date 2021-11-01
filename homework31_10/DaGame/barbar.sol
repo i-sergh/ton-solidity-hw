@@ -6,8 +6,8 @@ import "gameobj_interface.sol";
 import "armyunit.sol"; 
 import "basestation.sol";
 contract barbar is  armyunit {
-    
-    int kistyl_ = 4;
+    // для деплоя проекта на новый адрес
+    int kistyl_ = 6;
   
     constructor(basestation addr) public {
         
